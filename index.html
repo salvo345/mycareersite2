@@ -4,46 +4,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Personal Webpage</title>
+  <title>Saul's Personal Website</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Header Section -->
-  <header>
-    <h1>Your Name</h1>
-    <p>Aspiring Medical Sales Professional</p>
-  </header>
-
-  <!-- Navigation Menu Bar -->
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="background.html">Background</a></li>
-      <li><a href="career_goal.html">Career Goal</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="work_experience.html">Work Experience</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="community.html">Community Involvement</a></li>
-      <li><a href="employers.html">Potential Employers</a></li>
-      <li><a href="interests.html">Personal Interests</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="sitemap.html">Sitemap</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Home Page Content -->
-  <section id="home">
-    <h2>Welcome to My Personal Webpage!</h2>
-    <p>Hi, I'm [Your Name], an aspiring medical sales professional from Huntington, WV.</p>
-    <img src="your-photo.jpg" alt="Your Photo" class="profile-image">
+  <section id="home" class="section home">
+    <h1>Welcome to My Website!</h1>
+    <p>Hi, I'm Saul – a Business Management major and former college athlete excited to enter the medical sales industry.</p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-    <p><a href="mailto:your-email@example.com">Contact me</a></p>
-  </footer>
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <img src="https://via.placeholder.com/250" alt="A meaningful photo">
+    <p>I was born in Huntington, West Virginia, and I currently still live here. My high school experience was a lot of fun as I played a lot of sports and still have friends from high school that I still see today.</p>
+    <p>There are times where I consider what could have been if I had left home, but I am extremely grateful for my time at Marshall University as it has allowed me to meet some of my lifelong friends and create memories that I will hold close for the rest of my life.</p>
+    <h3>Career Mission / Goal</h3>
+    <p>My goal is to join a medical sales company with a great team environment and eventually grow into a leadership role that opens new business ventures.</p>
+    <h3>Education</h3>
+    <p>Business Management major with a Marketing minor at Marshall University.</p>
+    <h3>Work Experience</h3>
+    <p>Completed multiple internships with medical equipment salesmen. I’ve observed surgeries and learned hospital procedures first-hand.</p>
+    <h3>Skills</h3>
+    <ul>
+      <li>Team collaboration through years of sports</li>
+      <li>Empathy and emotional intelligence</li>
+      <li>Leadership and communication</li>
+    </ul>
+    <h3>Community Involvement</h3>
+    <ul>
+      <li>Volunteer coaching for youth soccer</li>
+      <li>Assisted with Huntington’s Greek Festival</li>
+      <li>Helped clean the city through Marshall soccer</li>
+    </ul>
+  </section>
 
+  <section id="portfolio" class="section portfolio">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <h3>SI-Bone</h3>
+      <p>Medical company focused on sacroiliac joint dysfunction, based in Santa Clara, CA.</p>
+    </div>
+    <div class="project">
+      <h3>Stryker</h3>
+      <p>Multinational medical equipment company known for innovation in orthopedics and neurotechnology.</p>
+    </div>
+    <div class="project">
+      <h3>Medtronic</h3>
+      <p>One of the world’s largest medical technology firms with a wide range of solutions across many fields.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Email me at: <a href="mailto:saulle@marshall.edu">saulle@marshall.edu</a></p>
+  </section>
 </body>
 </html>
+
+<!-- CSS file: styles.css -->
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #00c9a7;
+  }
+
+  .section {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .home {
+    background-image: url('https://via.placeholder.com/1200x300');
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+  }
+
+  .about img {
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .project {
+    margin-bottom: 20px;
+  }
+
+  .contact a {
+    color: #00c9a7;
+    font-weight: bold;
+  }
+</style>
